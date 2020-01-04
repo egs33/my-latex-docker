@@ -22,3 +22,4 @@ RUN apk --no-cache add \
     texmf-dist-fontsextra
 
 COPY --from=chktex_builder /chktex-version-1.7.6/chktex/chktex /usr/local/bin
+COPY --from=chktex_builder /chktex-version-1.7.6/chktex/chktexrc /usr/local/etc/chktexrc
