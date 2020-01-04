@@ -21,7 +21,8 @@ RUN apk --no-cache add \
     texmf-dist-langjapanese \
     texmf-dist-bibtexextra \
     texmf-dist-science \
-    texmf-dist-fontsextra
+    texmf-dist-fontsextra \
+    texmf-dist-latexextra
 
 COPY --from=chktex_builder /chktex/chktex/chktex /usr/local/bin
 COPY --from=chktex_builder /chktex/chktex/chktexrc /usr/local/etc/chktexrc
